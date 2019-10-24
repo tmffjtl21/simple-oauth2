@@ -1,6 +1,6 @@
 logging:
   level:
-    root: info
+    root: debug
 
 spring:
   jpa:
@@ -24,6 +24,14 @@ spring:
     console:
       enabled: true
       path: /h2-console
+
+#  devtools:
+#    livereload:
+#      enabled: true
+  freemarker:
+    cache: false
+  thymeleaf:
+    cache: false
 
   # Static resources reloading during development
   profiles:

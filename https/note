@@ -1,0 +1,1 @@
+http://localhost:8080/oauth/authorize?response_type=token&client_id=tjlee-client&redirect_uri=http%3A%2F%2Flocalhost%3A8080%2Fusers%2Fcallback
