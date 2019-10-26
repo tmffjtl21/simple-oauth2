@@ -1,6 +1,7 @@
+
 logging:
   level:
-    root: debug
+    root: info
 
 spring:
   jpa:
@@ -36,3 +37,5 @@ spring:
   # Static resources reloading during development
   profiles:
     active: dev
+server:
+  port: 8081

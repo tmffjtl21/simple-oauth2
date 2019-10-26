@@ -1,4 +1,4 @@
-GET http://localhost:8080/users/user
+GET http://localhost:8081/users/user?access_token=cee00edc-0a06-4c44-a28e-4887cbae65c3
 
 ###
 
