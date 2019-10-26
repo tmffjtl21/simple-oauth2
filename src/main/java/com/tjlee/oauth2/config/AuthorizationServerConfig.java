@@ -58,7 +58,9 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
                 .authorizedGrantTypes(GRANT_TYPE_PASSWORD, AUTHORIZATION_CODE, REFRESH_TOKEN, IMPLICIT, CLIENT_CREDENTIALS )
                 .scopes(SCOPE_READ, SCOPE_WRITE, TRUST)
                 .accessTokenValiditySeconds(ACCESS_TOKEN_VALIDITY_SECONDS)
-                .refreshTokenValiditySeconds(FREFRESH_TOKEN_VALIDITY_SECONDS);
+                .refreshTokenValiditySeconds(FREFRESH_TOKEN_VALIDITY_SECONDS)
+                // springboot 2.0으로 올라가면 하나이상의 redirect uri 등록 필요
+                .redirectUris("http://localhost:9090/oauth/login");
     }
 
     @Override
